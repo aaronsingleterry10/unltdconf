@@ -216,6 +216,34 @@ video {
     color: #FFF;
     padding: 3rem 2rem .2rem;
 }
+/* CSS animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.type-title {
+  display: inline-block;
+  min-height: 1.2em;
+  border-right: 4px solid currentColor;
+}
+
+.type-title.typing-done {
+  animation: cursorBlink 0.8s step-end infinite;
+}
+
+@keyframes cursorBlink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* ----------------- */
 
 /* marquee css */
 
