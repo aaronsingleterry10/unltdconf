@@ -311,7 +311,6 @@ video {
     .desktop {
         display: none;
     }
-    
 }
 
 @media screen and (max-width: 541px) {
@@ -320,6 +319,10 @@ video {
     }
     .speakers-wrap {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    .content-text {
+        line-height: 30px;
+        font-size: 19px;
     }
 }
 
