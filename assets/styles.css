@@ -143,8 +143,9 @@ h3 {
     padding: 2rem 0 0;
 }
 .content-wrap {
+    text-align: center;
     width: 90%;
-    max-width: 885px;
+    max-width: 675px;
     margin: auto;
     font-family: 'helvetica';
     color: var(--light-font-color);
@@ -153,8 +154,8 @@ h3 {
     text-align: center;
 }
 .content-text {
-    line-height: 28px;
-    font-size: 20px;
+    line-height: 40px;
+    font-size: 25px;
 }
 .video-container {
     padding: 0 1rem;
