@@ -321,8 +321,8 @@ video {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
     .content-text {
-        line-height: 30px;
-        font-size: 19px;
+        line-height: 30px !important;
+        font-size: 19px !important;
     }
 }
 
