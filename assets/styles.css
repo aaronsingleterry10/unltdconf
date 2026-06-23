@@ -1,0 +1,301 @@
+:root {
+    --main-font: 'helve';
+    --light-font-color: #FFF;
+    --main-bg-color: #FF1359;
+    --purple: #866AF7;
+}
+@font-face {
+    font-family: 'monolight';
+    src: url('https://churchunlimited.com/fonts/mono-light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'monobold';
+    src: url('https://churchunlimited.com/fonts/mono-bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helvetica-bold';
+    src: url('https://churchunlimited.com/fonts/Helvetica-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helvetica';
+    src: url('https://churchunlimited.com/fonts/Helvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    background-color: #111827;
+}
+header {
+    position: sticky;
+    top: 10px;
+}
+main {
+    /* overflow: hidden; */
+}
+.navbar {
+    /* position: relative; */
+}
+.nav-container {
+    margin-top: 20px;
+    width: 90%;
+    /* position: fixed; */
+    border-radius: 15px;
+    top: 10px;
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1.5em;
+    /*background: rgba(42, 15, 28, 0.8); */ /* #2A0F1C */
+    background: rgba(124, 58, 237, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.nav-icon {
+    max-height: 40px;
+    padding: .5rem 0;
+}
+.nav-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-list-item {
+    display: inline-block;
+    font-family: 'monolight';
+    font-size: 20px;
+}
+.nav-list-item a:link {
+    text-decoration: none;
+    color: var(--light-font-color);
+}
+.nav-link {
+    padding: 0.5rem 1rem;
+}
+.hero-wrap {
+    /* padding: 1rem 1rem; */
+}
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('https://churchunlimited.online/images/site_uploads/u27-bg.webp');
+    background-position: 50% 100%;
+    background-size: cover;
+    height: 100dvh;
+    /* border-radius: 20px; */
+    overflow: hidden;
+}
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.position-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-img {
+    width: 85%;
+    max-width: 600px;
+}
+.hero-content, .hero-info {
+    font-family: 'helvetica-bold';
+    color: #FFF;
+}
+.hero-content p {
+    font-size: 32px;
+}
+h1 {
+    text-align: center;
+    font-family: 'helvetica-bold';
+    font-size: 55px;
+}
+h2 {
+    font-family: 'helvetica';
+    color: var(--light-font-color);
+    font-size: 46px;
+    text-align: center;
+}
+h3 {
+    font-family: 'helvetica-bold';
+    color: var(--light-font-color);
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.content {
+    /* height: 54vh; */
+    height: auto;
+}
+.content, .video-section {
+    padding: 2rem 0 0;
+}
+.content-wrap {
+    width: 90%;
+    max-width: 885px;
+    margin: auto;
+    font-family: 'helvetica';
+    color: var(--light-font-color);
+}
+.content-subtitle, .content-text {
+    text-align: center;
+}
+.content-text {
+    line-height: 28px;
+    font-size: 20px;
+}
+.video-container {
+    padding: 0 1rem;
+}
+video {
+    width: 100%;
+    border-radius: 20px;
+}
+.btn-wrap, .btn-wrap-2 {
+    /* margin-top: 3rem; */
+    font-family: 'monolight';
+    text-align: center;
+}
+.btn-wrap-2 {
+    margin-top: 2rem;
+}
+.register-btn:link {
+    text-decoration: none;
+}
+.register-btn {
+    padding: 1rem 2rem;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #F24D47;
+}
+.speakers-section {
+    /* background-color: #FF6B35; */
+    padding: 3rem 1rem;
+}
+.speakers-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    place-items: center;
+}
+.speaker {
+    width: 100%;
+    max-width: 400px;
+    background-color: #26AF66;
+    text-align: center;
+    padding: 2rem 0;
+    border-radius: 20px;
+}
+.speaker-img {
+    width: 100%;
+    max-width: 400px;
+}
+.footer-container h3 {
+    font-family: 'helvetica-bold';
+}
+.footer-container p {
+    font-family: 'helvetica';
+}
+.footer-container {
+    font-family: 'helvetica';
+    color: #FFF;
+    padding: 3rem 2rem .2rem;
+}
+
+/* marquee css */
+
+.color-marquee {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-track,
+.marquee-track-reverse {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+}
+
+.marquee-group {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.color-block {
+    width: 120px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.green {
+    background: #26AF66;
+}
+
+.pink {
+    background: #EC94F9;
+}
+
+.baby-blue {
+    background: #22CBF6;
+}
+
+.purple {
+    background: #866CF8;
+}
+
+.red {
+    background: #F46563;
+}
+
+
+@media screen and (max-width: 991px) {
+    /* .hero-banner {
+        height: 60vw;
+    } */
+    h1 {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    h1 {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .desktop {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 541px) {
+    .hero-banner {
+        height: 96vh;
+    }
+    .speakers-wrap {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
+
+@media screen and (max-width: 472px) {
+    h1 {
+        font-size: 27px;
+    }
+}
