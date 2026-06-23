@@ -291,9 +291,25 @@ video {
     background: #F46563;
 }
 
-@media screen and (max-width: 472px) {
+
+@media screen and (max-width: 991px) {
+    /* .hero-banner {
+        height: 60vw;
+    } */
     h1 {
-        font-size: 27px;
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    h1 {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .desktop {
+        display: none;
     }
 }
 
@@ -305,28 +321,13 @@ video {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
     .content-text {
-        line-height: 30px !important;
-        font-size: 19px !important;
+        line-height: 30px;
+        font-size: 19px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .desktop {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 472px) {
     h1 {
-        font-size: 33px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    /* .hero-banner {
-        height: 60vw;
-    } */
-    h1 {
-        font-size: 44px;
+        font-size: 27px;
     }
 }
